@@ -2,30 +2,28 @@
 * Java implementation of a queue using array.
 * For demo purpose, should hold a maximum of 10 integers.
 *
-* @author  [your full name here]
-* @link    [full github url]
-* @version [version number]
-* @since   [last updated dd/mm/yyyy]
+* @author  [Zabala Abner L]
+* @link    [https://github.com/zabalaabner]
+* @version [0.1]
+* @since   [09/1/2016]
 */
 
 public class ArrayQueue {
   
-  // note: variable declarations
-  private int capacity; // note: optional, you may also use array.length
-  private int head; // note: value of front item
-  private int tail; // note: counter number of tail
-  private int[] storage; // note: array is of integer values
   
-  // note: constructor = initialize an object instance of the class
+  private int capacity;
+  private int head; 
+  private int tail;
+  private int[] storage; 
+  
+  
   public ArrayQueue(int size) {
-    capacity = size; // note: optional, can directly pass a new int[size]
+    capacity = size; 
     storage = new int[capacity];
-    // todo: initialize values for tail, head, and tail
+    
   } 
 
-  // note: will display the array
-  public void show() {
-    // note: the top of the queue starts from array[0] then newer item gets added on the tail and removes in the front
+    public void show() {
     for (int i = 0; i < capacity; i++) {
       System.out.println("queue["+ i +"] = " + storage[]); // todo: use adjust(head+i) to adjust each item's position
     }
@@ -111,8 +109,7 @@ public class ArrayQueue {
   }
 
   public static void main(String[] args) {
-    // note: construct a new array queue and assign 10 as the integer value for the size limit of the stack
-    System.out.println("STORAGE size = " + ); // todo: return the capacity limit of storage
+    System.out.println("STORAGE size = " + );
     System.out.println();
     storage.enqueue(1);
     storage.enqueue(2);
